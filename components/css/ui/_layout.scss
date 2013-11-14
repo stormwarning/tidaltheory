@@ -1,0 +1,103 @@
+/*------------------------------------*\
+    BASIC LAYOUT
+\*------------------------------------*/
+
+@font-face {
+    font-family: verb;
+    src: url('../fonts/verb--normal-300.eot');
+    src: url('../fonts/verb--normal-300.eot#iefix') format('embedded-opentype'),
+         url('../fonts/verb--normal-300.woff') format('woff'),
+         url('../fonts/verb--normal-300.svg#verb--normal-300') format('svg');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: verb;
+    src: url('../fonts/verb--italic-300.eot');
+    src: url('../fonts/verb--italic-300.eot#iefix') format('embedded-opentype'),
+         url('../fonts/verb--italic-300.woff') format('woff'),
+         url('../fonts/verb--italic-300.svg#verb--italic-300') format('svg');
+    font-style: italic;
+    font-weight: 300;
+}
+@font-face {
+    font-family: verb;
+    src: url('../fonts/verb--normal-700.eot');
+    src: url('../fonts/verb--normal-700.eot#iefix') format('embedded-opentype'),
+         url('../fonts/verb--normal-700.woff') format('woff'),
+         url('../fonts/verb--normal-700.svg#verb--normal-700') format('svg');
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+body {
+    background-color: #f2f2f2;
+    color: #666;
+    font-family: verb, sans-serif;
+}
+
+a {
+    color: #e6624e;
+    text-decoration: none;
+    
+    &:hover {
+        border-bottom: 1px solid;
+    }
+}
+
+/**
+ * Page wrapper
+ */
+.wrapper {
+    margin: 0 auto;
+    width: 83.333%;
+}
+
+
+/**
+ * Contact area
+ */
+.bio {
+    position: fixed;
+    top: $base-spacing-unit*5;
+    width: 100%;
+}
+
+
+/**
+ * Work content
+ */
+.content {
+    margin-top: $base-spacing-unit;
+    margin-bottom: $base-spacing-unit*5;
+}
+
+
+.work {
+    margin-bottom: $base-spacing-unit*2;
+}
+
+
+.screenshot {
+    border: $base-spacing-unit/2 solid #fff;
+    width: $base-spacing-unit + 400px;
+}
+.screenshot[on~="click|toggle"] {
+    width: $base-spacing-unit + 800px;
+}
+
+
+h2:before {
+    content: '#';
+    opacity: 0.125;
+    position: absolute;
+    left: -0.1em;
+}
+
+h3:before {
+    content: '##';
+    opacity: 0.125;
+    position: absolute;
+    left: -0.75em;
+}
