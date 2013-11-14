@@ -3152,11 +3152,24 @@ a:hover {
   width: 100%;
 }
 
+.lede {
+  margin: -12px 0 24px 0;
+  opacity: 0.6;
+}
+
+nav {
+  margin-bottom: 48px;
+}
+
+h4 {
+  margin-bottom: 12px;
+}
+
 /**
  * Work content
  */
 .content {
-  margin-top: 24px;
+  margin-top: 48px;
   margin-bottom: 120px;
 }
 

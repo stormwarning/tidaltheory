@@ -65,11 +65,27 @@ a {
 }
 
 
+.lede {
+    margin: -$base-spacing-unit/2 0 $base-spacing-unit 0;
+    opacity: 0.6;
+}
+
+
+nav {
+    margin-bottom: $base-spacing-unit*2;
+}
+
+
+h4 {
+    margin-bottom: $base-spacing-unit/2;
+}
+
+
 /**
  * Work content
  */
 .content {
-    margin-top: $base-spacing-unit;
+    margin-top: $base-spacing-unit*2;
     margin-bottom: $base-spacing-unit*5;
 }
 
