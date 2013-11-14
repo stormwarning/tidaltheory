@@ -22,6 +22,15 @@
 }
 @font-face {
     font-family: verb;
+    src: url('../fonts/verb--normal-600.eot');
+    src: url('../fonts/verb--normal-600.eot#iefix') format('embedded-opentype'),
+         url('../fonts/verb--normal-600.woff') format('woff'),
+         url('../fonts/verb--normal-600.svg#verb--normal-600') format('svg');
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: verb;
     src: url('../fonts/verb--normal-700.eot');
     src: url('../fonts/verb--normal-700.eot#iefix') format('embedded-opentype'),
          url('../fonts/verb--normal-700.woff') format('woff'),
@@ -99,9 +108,17 @@ h4 {
 .screenshot {
     border: $base-spacing-unit/2 solid #fff;
     width: $base-spacing-unit + 400px;
+    
+    &:hover {
+        cursor: se-resize;
+    }
 }
 .screenshot[on~="click|toggle"] {
     width: $base-spacing-unit + 800px;
+    
+    &:hover {
+        cursor: nw-resize;
+    }
 }
 
 

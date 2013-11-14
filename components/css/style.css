@@ -3115,6 +3115,14 @@ label,
 
 @font-face {
   font-family: verb;
+  src: url("../fonts/verb--normal-600.eot");
+  src: url("../fonts/verb--normal-600.eot#iefix") format("embedded-opentype"), url("../fonts/verb--normal-600.woff") format("woff"), url("../fonts/verb--normal-600.svg#verb--normal-600") format("svg");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: verb;
   src: url("../fonts/verb--normal-700.eot");
   src: url("../fonts/verb--normal-700.eot#iefix") format("embedded-opentype"), url("../fonts/verb--normal-700.woff") format("woff"), url("../fonts/verb--normal-700.svg#verb--normal-700") format("svg");
   font-style: normal;
@@ -3182,9 +3190,15 @@ h4 {
   border: 12px solid white;
   width: 424px;
 }
+.screenshot:hover {
+  cursor: se-resize;
+}
 
 .screenshot[on~="click|toggle"] {
   width: 824px;
+}
+.screenshot[on~="click|toggle"]:hover {
+  cursor: nw-resize;
 }
 
 h2:before {
