@@ -90,7 +90,14 @@ a {
 
 h2:before {
     content: '#';
-    opacity: 0.2;
+    opacity: 0.125;
     position: absolute;
     left: -0.1em;
+}
+
+h3:before {
+    content: '##';
+    opacity: 0.125;
+    position: absolute;
+    left: -0.75em;
 }
