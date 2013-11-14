@@ -38,11 +38,12 @@ body {
 }
 
 a {
-    color: #e6624e;
+    color: #2980b9;
     text-decoration: none;
     
     &:hover {
         border-bottom: 1px solid;
+        color: #3498db;
     }
 }
 
