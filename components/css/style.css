@@ -3164,9 +3164,13 @@ a:hover {
   margin-bottom: 48px;
 }
 
-.size--regular {
+.screenshot {
   border: 12px solid white;
   width: 424px;
+}
+
+.screenshot[on~="click|toggle"] {
+  width: 824px;
 }
 
 h2:before {

@@ -79,9 +79,12 @@ a {
 }
 
 
-.size--regular {
+.screenshot {
     border: $base-spacing-unit/2 solid #fff;
     width: $base-spacing-unit + 400px;
+}
+.screenshot[on~="click|toggle"] {
+    width: $base-spacing-unit + 800px;
 }
 
 
