@@ -3144,6 +3144,10 @@ a:hover {
   color: #3498db;
 }
 
+strong {
+  font-weight: 600;
+}
+
 /**
  * Page wrapper
  */
@@ -3186,6 +3190,10 @@ h4 {
   margin-bottom: 48px;
 }
 
+.meta span {
+  opacity: 0.5;
+}
+
 .screenshot {
   border: 12px solid white;
   width: 424px;
@@ -3199,6 +3207,10 @@ h4 {
 }
 .screenshot[on~="click|toggle"]:hover {
   cursor: nw-resize;
+}
+
+h2 {
+  margin-bottom: 4px;
 }
 
 h2:before {

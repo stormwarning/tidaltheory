@@ -56,6 +56,11 @@ a {
     }
 }
 
+strong {
+    font-weight: 600;
+}
+
+
 /**
  * Page wrapper
  */
@@ -105,6 +110,14 @@ h4 {
 }
 
 
+.meta {
+    
+    span {
+        opacity: 0.5;
+    }
+}
+
+
 .screenshot {
     border: $base-spacing-unit/2 solid #fff;
     width: $base-spacing-unit + 400px;
@@ -119,6 +132,11 @@ h4 {
     &:hover {
         cursor: nw-resize;
     }
+}
+
+
+h2 {
+    margin-bottom: 4px;
 }
 
 
