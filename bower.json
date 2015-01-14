@@ -1,0 +1,8 @@
+{
+  "name": "tidaltheory.co",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.7.2"
+  }
+}
