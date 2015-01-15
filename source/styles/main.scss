@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #STYLE MANIFEST
+\*------------------------------------*/
+/**
+* Generic utility styles etc.
+*/
+@import "variables";
+@import "mixins";
+@import "../vendor/normalize-scss/_normalize";
+
+
+/**
+* Base styles; unclassed HTML elements etc.
+*/
+@import "partials/base.global";
+@import "partials/base.typography";
+
+
+/**
+* Objects, abstractions, and constructs
+*/
+// @import "partials/object.button";
+// @import "partials/object.nav";
+// @import "partials/object.revealer";
+// @import "partials/object.hero";
+// @import "partials/object.sprite";
+@import "partials/component.project";
+
+
+/**
+* Page-specific styles
+*/
+// @import "partials/layout.front";
+// @import "partials/layout.page";
+// @import "partials/layout.404";
+
+
+/**
+* WordPress default classes etc.
+*/
+
+
+/**
+* Style trumps; helper and vendor styles
+*/
+// @import "partials/trump.modernizr";
+// @import "partials/trump.print";
+// @import "partials/trump.debug";
