@@ -19,7 +19,10 @@ Thumbs.db
 
 
 #
-# SASS files
+# Build process files
 #
 
 .sass-cache
+node_modules
+source/vendor
+assets
