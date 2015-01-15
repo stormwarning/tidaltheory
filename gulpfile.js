@@ -13,17 +13,17 @@ var reload = browserSync.reload;
 // FILE PATHS =========================================================
 var source = {
 
-  styles : './source/styles/*.scss',
-  scripts : './source/scripts/*.js',
-  images : './source/images/*.{png,jpg,gif}',
-  svgs : './source/images/*.svg'
+  styles : 'source/styles/**/*.scss',
+  scripts : 'source/scripts/*.js',
+  images : 'source/images/*.{png,jpg,gif}',
+  svgs : 'source/images/*.svg'
 
 };
 var assets = {
 
-  styles : './assets/styles/',
-  scripts : './assets/scripts/',
-  images : './assets/images/'
+  styles : 'assets/styles',
+  scripts : 'assets/scripts',
+  images : 'assets/images'
 
 };
 
@@ -45,7 +45,7 @@ var AUTOPREFIXER_BROWSERS = [
 // COMPILE STYLESHEETS ================================================
 gulp.task('styles', function () {
 
-  return gulp.src(source.styles)
+  return gulp.src('source/styles/*.scss')
     .pipe($.changed('styles', {
       extension: '.scss'
     }))
@@ -72,7 +72,7 @@ gulp.task('scripts', function () {
     .pipe(concat('scripts.js'))
     .pipe($.uglify())
     .pipe(gulp.dest(assets.scripts))
-    .pipe(notify('Scripts task completed'));
+    .pipe($.notify('Scripts task completed'));
 
 });
 
@@ -81,12 +81,12 @@ gulp.task('scripts', function () {
 gulp.task('images', function () {
 
   return gulp.src(source.images)
-    .pipe(imagemin({
+    .pipe($.imagemin({
       optimizationLevel: 3,
       progressive: true,
       interlaced: true
     }))
-    .pipe(notify('Images task completed'))
+    .pipe($.notify('Images task completed'))
     .pipe(gulp.dest(source.images));
 
 });
