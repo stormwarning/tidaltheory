@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #LAYOUT.PROJECT
+\*------------------------------------*/
+/**
+ * Section for different project details.
+ */
+.project-body {
+  padding: $layout-gutter;
+}
+
+
+
+
+.project-icon {
+  margin-bottom: $base-line-height;
+  text-align: center;
+
+  > img {
+    width: 180px;
+    height: 180px;
+  }
+}

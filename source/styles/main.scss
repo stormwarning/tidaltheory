@@ -19,12 +19,14 @@
 /**
 * Objects, abstractions, and constructs
 */
-// @import "partials/object.button";
-// @import "partials/object.nav";
-// @import "partials/object.revealer";
-// @import "partials/object.hero";
-// @import "partials/object.sprite";
 @import "partials/component.project";
+
+
+/**
+ * Layout styles for various sections
+ */
+@import "partials/layout.work";
+@import "partials/layout.project";
 
 
 /**
@@ -33,11 +35,6 @@
 // @import "partials/layout.front";
 // @import "partials/layout.page";
 // @import "partials/layout.404";
-
-
-/**
-* WordPress default classes etc.
-*/
 
 
 /**

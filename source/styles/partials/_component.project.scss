@@ -10,6 +10,7 @@
 .project {
   position: relative;
   display: block;
+  margin-bottom: $base-line-height;
   overflow: hidden;
   color: $white;
 
@@ -36,6 +37,7 @@
 
 
 .project-image {
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -53,6 +55,14 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: $layout-gutter;
+    padding: $layout-gutter / 2;
+
+    > :last-child {
+      margin-bottom: 0;
+    }
   }
+}
+
+.project-title {
+  margin-bottom: $base-line-height / 4;
 }
