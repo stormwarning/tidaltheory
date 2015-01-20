@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #COMPONENT.NAV
+\*------------------------------------*/
+/**
+ * "Menuised" list element.
+ */
+.nav {
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    font-size: $base-font-size;
+
+    > a {
+      display: inline-block;
+      padding: $layout-gutter / 2;
+    }
+  }
+}

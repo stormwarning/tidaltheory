@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #LAYOUT.MENU
+\*------------------------------------*/
+/**
+ * Main site menu in different contexts.
+ */
+.site-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: $layout-gutter;
+  font-size: 0;
+}
+
+
+.site-home,
+.site-nav {
+  display: inline-block;
+  width: 50%;
+  font-size: $base-font-size;
+}
+
+.site-nav {
+  text-align: right;
+}
