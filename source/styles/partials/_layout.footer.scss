@@ -1,0 +1,10 @@
+/*------------------------------------*\
+    #LAYOUT.FOOTER
+\*------------------------------------*/
+/**
+ * Main site footer.
+ */
+.site-footer {
+  padding: ($base-line-height * 2) $layout-gutter;
+  background-color: $grey-dark;
+}

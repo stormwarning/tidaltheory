@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #COMPONENT.HERO
+\*------------------------------------*/
+/**
+ * Primary callout feature section.
+ */
+.hero {
+  padding: ($base-line-height * 2) $layout-gutter;
+  margin-top: 90px;
+  text-align: center;
+
+  h1 {
+    @include typ-font-size($h2-size, 1);
+  }
+}

@@ -71,9 +71,8 @@ button {
   margin-top: 0;
   margin-bottom: $base-line-height;
   font-family: $font-heading;
-  font-weight: 200;
-  line-height: 1.26;
-  letter-spacing: 0.06ex;
+  font-weight: 400;
+  line-height: 1;
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
 
@@ -85,7 +84,7 @@ button {
 h1, .alpha {
   @extend %hN;
 
-  font-size: $h2-size;
+  font-size: $h1-size;
 }
 
 h2, .beta {

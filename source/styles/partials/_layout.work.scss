@@ -5,5 +5,9 @@
  * Section listing different projects.
  */
 .work {
-  padding: $layout-gutter;
+  padding: $base-line-height $layout-gutter 0;
+
+  .section-title {
+    @include typ-font-size($kilo-size, 1);
+  }
 }

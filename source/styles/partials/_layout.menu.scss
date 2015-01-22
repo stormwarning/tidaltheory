@@ -10,8 +10,9 @@
   left: 0;
   z-index: 100;
   width: 100%;
-  padding: $layout-gutter;
+  padding: ($base-line-height / 4) $layout-gutter;
   font-size: 0;
+  background-color: $black;
 }
 
 
@@ -24,4 +25,5 @@
 
 .site-nav {
   text-align: right;
+  text-transform: uppercase;
 }
