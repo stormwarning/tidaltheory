@@ -71,8 +71,7 @@ gulp.task('scripts', function () {
     .pipe($.jshint.reporter('jshint-stylish'))
     .pipe(concat('scripts.js'))
     .pipe($.uglify())
-    .pipe(gulp.dest(assets.scripts))
-    .pipe($.notify('Scripts task completed'));
+    .pipe(gulp.dest(assets.scripts));
 
 });
 
@@ -86,8 +85,7 @@ gulp.task('images', function () {
       progressive: true,
       interlaced: true
     }))
-    .pipe($.notify('Images task completed'))
-    .pipe(gulp.dest(source.images));
+    .pipe(gulp.dest(assets.images));
 
 });
 
