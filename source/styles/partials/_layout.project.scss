@@ -5,18 +5,40 @@
  * Section for different project details.
  */
 .project-body {
-  padding: $layout-gutter;
+  padding: $base-line-height 0 0;
+
+  .section-title {
+    padding: 0 $layout-gutter;
+
+    @include typ-font-size($kilo-size, 1);
+  }
 }
 
 
 
 
 .project-icon {
+  padding: 45px;
   margin-bottom: $base-line-height;
   text-align: center;
 
   > img {
-    width: 180px;
-    height: 180px;
+    width: 90px;
+    height: 90px;
   }
+}
+
+
+
+
+.project-intro {
+  padding: 0 $layout-gutter;
+}
+
+
+
+
+.project-showcase {
+  padding: $base-line-height * 2 $layout-gutter;
+  background-color: rgba($black, 0.2);
 }
