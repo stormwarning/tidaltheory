@@ -5,8 +5,14 @@
  * Primary callout feature section.
  */
 .hero {
-  padding: ($base-line-height * 2) $layout-gutter;
   margin-top: 90px;
+}
+
+
+
+
+.hero-content {
+  padding: ($base-line-height * 2) $layout-gutter;
   text-align: center;
 
   h1 {
