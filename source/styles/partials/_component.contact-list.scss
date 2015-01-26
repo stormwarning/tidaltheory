@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #COMPONENT.CONTACT-LIST
+\*------------------------------------*/
+/**
+ * List of different contact links in footer.
+ */
+.contact-list {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+
+  > li {
+    font-size: $base-font-size;
+
+    > a {
+      display: inline-block;
+      padding: $layout-gutter / 2;
+      color: $white;
+    }
+  }
+}
