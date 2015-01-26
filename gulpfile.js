@@ -90,6 +90,23 @@ gulp.task('images', function () {
 });
 
 
+// CREATE SVG SPRITE ==================================================
+gulp.task('sprite', function () {
+
+  return gulp.src(source.svgs)
+  .pipe($.svgSprite({
+    mode: {
+      symbol: {
+        dest: './',
+        sprite: 'sprite.symbol.svg'
+      }
+    }
+  }))
+  .pipe(gulp.dest(assets.images));
+
+});
+
+
 // WATCH FOR CHANGES AND RELOAD =======================================
 gulp.task('serve', ['styles'], function () {
   browserSync({
