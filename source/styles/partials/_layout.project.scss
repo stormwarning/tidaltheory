@@ -19,7 +19,6 @@
 
 .project-icon {
   padding: 45px;
-  margin-bottom: $base-line-height;
   text-align: center;
 
   > img {
@@ -31,14 +30,19 @@
 
 
 
-.project-intro {
-  padding: 0 $layout-gutter;
+.project-intro,
+.project-notes {
+  padding: ($base-line-height * 2) $layout-gutter;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 
 
 
 .project-showcase {
-  padding: $base-line-height * 2 $layout-gutter;
+  padding: ($base-line-height * 2) $layout-gutter;
   background-color: rgba($black, 0.2);
 }
