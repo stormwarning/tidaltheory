@@ -80,6 +80,7 @@ gulp.task('scripts', function () {
 gulp.task('images', function () {
 
   return gulp.src(source.images)
+    .pipe($.changed(assets.images))
     .pipe($.imagemin({
       optimizationLevel: 3,
       progressive: true,
