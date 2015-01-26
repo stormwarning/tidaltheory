@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #COMPONENT.ICON
+\*------------------------------------*/
+/**
+ * Text-inline icon images.
+ */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+
+
+
+.icon--email {
+  fill: $color-email;
+}
+
+
+.icon--twitter {
+  fill: $color-twitter;
+}
+
+
+.icon--github {
+  fill: $color-github;
+}
+
+
+.icon--behance {
+  fill: $color-behance;
+}
+
+
+.icon--linkedin {
+  fill: $color-linkedin;
+}

@@ -11,12 +11,27 @@
   list-style: none;
 
   > li {
+    display: inline-block;
     font-size: $base-font-size;
+  }
 
-    > a {
-      display: inline-block;
-      padding: $layout-gutter / 2;
-      color: $white;
+  a {
+    display: inline-block;
+    padding: $layout-gutter / 2;
+    color: $white;
+
+    &:hover,
+    &:focus {
+
+      .icon {
+        fill: $grey-light;
+      }
     }
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    fill: $white;
   }
 }
