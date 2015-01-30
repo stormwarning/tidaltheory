@@ -5,17 +5,66 @@
  * Primary callout feature section.
  */
 .hero {
-  margin-top: 90px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    padding-bottom: 133.3333%;
+    content: "";
+  }
+
+  > * {
+    position: absolute;
+  }
+}
+
+
+
+
+.hero-image,
+.hero-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.hero-image {
+
+}
+
+
+
+
+.hero-overlay {
+  background-color: $black;
+  opacity: 0.8;
 }
 
 
 
 
 .hero-content {
-  padding: ($base-line-height * 2) $layout-gutter;
+  bottom: 0;
+  width: 100%;
+  padding: 50% $layout-gutter;
+  color: $white;
   text-align: center;
 
   h1 {
     @include typ-font-size($h2-size, 1);
+  }
+}
+
+
+
+
+.hero--spacer {
+  margin-top: 90px;
+
+  &:before {
+    content: none;
   }
 }
