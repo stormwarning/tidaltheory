@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #COMPONENT.BROWSER
+\*------------------------------------*/
+/**
+ * Fake browser chrome with scrollable area.
+ */
+.browser {
+
+}
+
+
+
+
+.browser-bar {
+  height: 30px;
+  background-color: $grey-dark;
+  border-radius: 4px 4px 0 0;
+}
+
+
+
+
+.browser-viewport {
+  height: 400px;
+  overflow-y: scroll;
+
+  img {
+    display: block;
+  }
+}
