@@ -53,8 +53,8 @@ $micro-size:        10px!default;
 
 
 /**
-* Basic custom style variables.
-*/
+ * Basic custom style variables.
+ */
 $site-width:        960px;
 $base-radius:       5px;
 $sprite-size:       600px 400px;
@@ -64,3 +64,9 @@ $timing:            ease-in;
 
 // Grid settings
 $layout-gutter:     20px;
+
+// Breakpoints
+$breakpoints: (
+  "medium"          "screen and (min-width: 48em)",
+  "retina"          "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+) !default;
