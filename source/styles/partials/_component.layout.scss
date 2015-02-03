@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    #COMPONENT.LAYOUT
+\*------------------------------------*/
+/**
+ * The inuitcss layout system uses `box-sizing: border-box;` and
+ * `display: inline-block;` to create an extremely powerful, flexible
+ * alternative to the traditional grid system. Combine the layout items with
+ * the widths found in `trumps.widths`.
+ */
+
+
+ /**
+ * Begin a layout group.
+ */
+.layout,
+%layout {
+  padding: 0;
+  margin: 0;
+  margin-left: -$layout-gutter;
+  font-size: 0;
+  list-style: none;
+}
+
+
+
+
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Space columns apart.
+ * 3. Align columns to the tops of each other.
+ * 4. Full-width unless told to behave otherwise.
+ * 5. Required to combine fluid widths and fixed gutters.
+ */
+.layout-item,
+%layout-item {
+  display: inline-block; /* [1] */
+  width: 100%; /* [4] */
+  padding-left: $layout-gutter; /* [2] */
+  font-size: $base-font-size;
+  vertical-align: top; /* [3] */
+}
+
+
+
+
+/**
+ * Layouts with large gutters.
+ */
+.layout--large,
+%layout--large {
+  margin-left: -($layout-gutter * 2);
+
+  > .layout-item,
+  > %layout-item {
+    padding-left: ($layout-gutter * 2);
+  }
+
+}
+
+
+/**
+ * Layouts with no gutters.
+ */
+.layout--flush,
+%layout--flush {
+  margin-left: 0;
+
+  > .layout-item,
+  > %layout-item {
+    padding-left: 0;
+  }
+}
+
+
+
+
+.layout-item--1-3 {
+
+  @include media-query(medium) {
+    width: 33.3333%;
+  }
+}

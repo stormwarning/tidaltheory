@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    #LAYOUT.RESUME
+\*------------------------------------*/
+/**
+ * CV Section.
+ */
+.resume-title {
+  @include typ-font-size($kilo-size, 1);
+}
+
+
+.resume-subtitle {
+  margin-bottom: ($base-line-height / 2);
+  text-transform: none;
+
+  @include typ-font-size($h4-size, 1);
+}
+
+
+
+
+.resume {
+  padding: ($base-line-height * 2) $layout-gutter 0;
+
+  @include media-query(medium) {
+    font-size: 0;
+    margin-left: -$layout-gutter;
+  }
+}
+
+
+
+
+.resume-info,
+.resume-experience,
+.resume-skills {
+
+  @include media-query(medium) {
+    display: inline-block;
+    width: 33.3333%;
+    padding-left: $layout-gutter;
+    font-size: $base-font-size;
+    vertical-align: top;
+  }
+
+  p {
+    margin-bottom: ($base-line-height * 2);
+  }
+}
