@@ -19,6 +19,10 @@
     display: block;
     padding-bottom: 133.3333%;
     content: "";
+
+    @include media-query(landscape) {
+      padding-bottom: 56.25%;
+    }
   }
 
   &:hover,
@@ -60,6 +64,10 @@
     bottom: 0;
     width: 100%;
     padding: $layout-gutter / 2;
+
+    @include media-query(medium) {
+      padding: $layout-gutter;
+    }
 
     > :last-child {
       margin-bottom: 0;

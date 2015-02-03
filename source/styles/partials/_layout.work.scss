@@ -8,7 +8,7 @@
   padding: $base-line-height $layout-gutter 0;
 
   @include media-query(medium) {
-    padding: $base-line-height ($layout-gutter * 2) 0;
+    padding: ($base-line-height * 2) ($layout-gutter * 2);
   }
 
   .section-title {

@@ -69,4 +69,6 @@ $layout-gutter:     20px;
 $breakpoints: (
   "medium"          "screen and (min-width: 48em)",
   "retina"          "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+  "portrait"        "all and (orientation: portrait)",
+  "landscape"       "all and (orientation: landscape)"
 ) !default;
