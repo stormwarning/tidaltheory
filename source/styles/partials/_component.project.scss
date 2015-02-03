@@ -26,6 +26,10 @@
 
   }
 
+  @include media-query(medium) {
+    margin-bottom: ($base-line-height * 2);
+  }
+
   > * {
     position: absolute;
     top: 0;
