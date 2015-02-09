@@ -59,7 +59,7 @@
 .hero-content {
   position: relative;
   width: 100%;
-  padding: $base-line-height $layout-gutter;
+  padding: 90px $layout-gutter 0; // account for fixed header height
   margin: auto;
   color: $white;
   text-align: center;
