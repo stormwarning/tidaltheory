@@ -20,11 +20,18 @@
 
 
 .resume {
+  width: 100%;
   padding: ($base-line-height * 2) $layout-gutter 0;
 
   @include media-query(medium) {
+    padding: ($base-line-height * 2) ($layout-gutter * 2) 0;
+    margin-left: -($layout-gutter * 2);
     font-size: 0;
-    margin-left: -$layout-gutter;
+  }
+
+  @include media-query(large) {
+    max-width: 960px;
+    margin: 0 auto;
   }
 }
 
@@ -37,13 +44,29 @@
 
   @include media-query(medium) {
     display: inline-block;
-    width: 33.3333%;
-    padding-left: $layout-gutter;
+    width: 50%;
+    padding-left: ($layout-gutter * 2);
     font-size: $base-font-size;
     vertical-align: top;
   }
 
   p {
     margin-bottom: ($base-line-height * 2);
+  }
+}
+
+.resume-info {
+
+  @include media-query(medium) {
+    width: 100%;
+  }
+}
+
+.resume-info,
+.resume-experience,
+.resume-skills {
+
+  @include media-query(large) {
+    width: 33.3333%;
   }
 }
