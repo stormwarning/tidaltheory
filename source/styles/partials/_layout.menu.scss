@@ -10,10 +10,19 @@
   left: 0;
   z-index: 100;
   width: 100%;
-  padding: ($base-line-height / 4) $layout-gutter;
-  font-size: 0;
-  background-color: $black;
+  // background-color: $black;
+
+  .layout-container {
+    padding: ($base-line-height / 4) $layout-gutter;
+    font-size: 0;
+
+    @include media-query(large) {
+      padding: ($base-line-height / 4) 0;
+    }
+  }
 }
+
+
 
 
 .site-home,

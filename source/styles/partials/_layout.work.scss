@@ -15,3 +15,14 @@
     @include typ-font-size($kilo-size, 1);
   }
 }
+
+
+
+
+.work-container {
+
+  @include media-query(large) {
+    max-width: $site-width;
+    margin: 0 auto;
+  }
+}

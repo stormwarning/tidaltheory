@@ -30,7 +30,7 @@
   }
 
   @include media-query(large) {
-    max-width: 960px;
+    max-width: $site-width;
     margin: 0 auto;
   }
 }

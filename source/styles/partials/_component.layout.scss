@@ -74,9 +74,35 @@
 
 
 
+/**
+ * Layout container, to ensure a centered, max-width.
+ */
+.layout-container {
+
+  @include media-query(large) {
+    max-width: $site-width;
+    margin: 0 auto;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+
 .layout-item--1-3 {
 
   @include media-query(medium) {
     width: 33.3333%;
+  }
+}
+
+
+.layout-item--1-2 {
+
+  @include media-query(medium) {
+    width: 50%;
   }
 }

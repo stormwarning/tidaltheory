@@ -5,6 +5,26 @@
  * Main site footer.
  */
 .site-footer {
-  padding: ($base-line-height * 2) $layout-gutter;
-  background-color: $grey-dark;
+  background-color: $blue-dark;
+
+  .layout-container {
+    padding: ($base-line-height * 2) $layout-gutter;
+
+    @include media-query(medium) {
+      padding: ($base-line-height * 2) ($layout-gutter * 2);
+    }
+
+    @include media-query(large) {
+      max-width: $site-width;
+      padding: ($base-line-height * 2) 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+
+.footer-title {
+  color: $grey-light;
 }
