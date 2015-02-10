@@ -7,14 +7,20 @@
 $black:             #222;
 $grey-dark:         #666;
 $grey:              #bcc2c9;
-$grey-light:        #e9ebed;
+$grey-light:        #e9e9e9;
 $white:             #fff;
 
+$gold:              #978871;
 $red:               #99161e;
+$blue-cold:         #304153;
+$blue-dark:         #17232f;
+
+$backdrop-light:    #e3e4e8;
+$backdrop-dark:     #dadbe0;
 
 $color-text:        $black;
 $color-background:  $white;
-$color-link:        $grey-dark;
+$color-link:        $gold;
 $color-shadow:      $black;
 $color-selection:   $grey-light;
 
@@ -55,12 +61,12 @@ $micro-size:        10px!default;
 /**
  * Basic custom style variables.
  */
-$site-width:        960px;
+$site-width:        1024px;
 $base-radius:       5px;
 $sprite-size:       600px 400px;
 
 // Transition settings
-$timing:            ease-in;
+$timing:            ease-in-out;
 
 // Grid settings
 $layout-gutter:     20px;

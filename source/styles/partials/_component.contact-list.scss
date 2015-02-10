@@ -32,6 +32,7 @@
   .icon {
     width: 32px;
     height: 32px;
-    fill: $white;
+    transition: all 0.15s $timing;
+    fill: $gold;
   }
 }
