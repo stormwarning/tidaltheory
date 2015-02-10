@@ -11,6 +11,10 @@
     padding: 0 $layout-gutter;
 
     @include typ-font-size($kilo-size, 1);
+
+    @include media-query(large) {
+      padding: ($base-line-height * 2) 0;
+    }
   }
 }
 
@@ -20,9 +24,9 @@
 .project-icon {
   padding: 45px;
   text-align: center;
-  background-color: $grey-light;
+  background-image: linear-gradient(to bottom, $backdrop-light 0%, $backdrop-dark 66%, $backdrop-light 100%);
 
-  > img {
+  img {
     width: 90px;
     height: 90px;
   }
@@ -34,10 +38,6 @@
 .project-intro,
 .project-notes {
   padding: ($base-line-height * 2) $layout-gutter;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
 }
 
 
@@ -45,5 +45,5 @@
 
 .project-showcase {
   padding: ($base-line-height * 2) $layout-gutter;
-  background-color: rgba($black, 0.2);
+  background-image: linear-gradient(to bottom, $backdrop-light 0%, $backdrop-dark 66%, $backdrop-light 100%);
 }
