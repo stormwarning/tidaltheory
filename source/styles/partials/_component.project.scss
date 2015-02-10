@@ -13,6 +13,7 @@
   margin-bottom: $base-line-height;
   overflow: hidden;
   color: $white;
+  transition: all 0.25s $timing;
 
   // maintain 3:4 aspect ratio
   &:before {
@@ -21,13 +22,21 @@
     content: "";
 
     @include media-query(landscape) {
-      padding-bottom: 56.25%;
+      padding-bottom: 65.75%;
     }
   }
 
   &:hover,
   &:focus {
+    color: $white;
 
+    .project-lid--a {
+      transform: translateX(-25%) rotate(30deg);
+    }
+
+    .project-lid--b {
+      transform: translateX(25%) rotate(30deg);
+    }
   }
 
   @include media-query(medium) {
@@ -44,6 +53,8 @@
 }
 
 
+
+
 .project-image {
   background-position: 50%;
   background-repeat: no-repeat;
@@ -51,10 +62,39 @@
 }
 
 
+
+
 .project-overlay {
   background-color: $black;
   opacity: 0.5;
 }
+
+
+
+
+.project-lid {
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: $blue-cold;
+  transform: rotate(30deg);
+  transition: inherit;
+}
+
+
+.project-lid--a {
+  right: 49%;
+  left: auto;
+  transform-origin: 100% 50%;
+}
+
+
+.project-lid--b {
+  left: 50%;
+  transform-origin: 0% 50%;
+}
+
+
 
 
 .project-content {
