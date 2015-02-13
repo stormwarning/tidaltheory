@@ -37,6 +37,10 @@
     .project-lid--b {
       transform: translateX(25%) rotate(30deg);
     }
+
+    .project-overlay {
+      opacity: 0.6;
+    }
   }
 
   @include media-query(medium) {
@@ -66,7 +70,8 @@
 
 .project-overlay {
   background-color: $black;
-  opacity: 0.5;
+  opacity: 1;
+  transition: inherit;
 }
 
 
