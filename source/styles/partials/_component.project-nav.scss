@@ -9,7 +9,7 @@
   padding: ($base-line-height * 2) $layout-gutter;
 
   a {
-    color: $white;
+    color: $blue-dark;
   }
 }
 
@@ -39,7 +39,7 @@
 
 
 .project-nav-overlay {
-  background-color: $black;
+  background-color: $grey-light;
 }
 
 
@@ -52,8 +52,7 @@
 
 
 .project-nav-title {
-  margin-bottom: ($base-line-height * 2);
-  color: $grey;
+  color: $gold;
 }
 
 
