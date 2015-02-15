@@ -47,3 +47,16 @@
   padding: ($base-line-height * 2) $layout-gutter;
   background-image: linear-gradient(to bottom, $backdrop-light 0%, $backdrop-dark 66%, $backdrop-light 100%);
 }
+
+
+
+
+.project-notes {
+
+  p {
+
+    &:last-child {
+      padding-top: $base-line-height;
+    }
+  }
+}
