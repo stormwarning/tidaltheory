@@ -57,9 +57,16 @@
 
 
 .project-next {
-  display: block;
+  display: inline-block;
   margin-bottom: ($base-line-height * 2);
   font-family: $font-heading;
+  border-bottom: 1px solid $grey-light;
 
   @include typ-font-size($h2-size, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 1px solid $grey-dark;
+  }
 }
