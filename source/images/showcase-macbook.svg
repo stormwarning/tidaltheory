@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="macbook-pro" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 320 184.9" enable-background="new 0 0 320 184.9" xml:space="preserve">
+<path id="shadow" opacity="0.25" fill="#404041" d="M275,180.2v-161V0H40.6c-3.1,0-6.2,1.2-8.5,3.3L17.9,18.1
+	c-2.5,2.4-3.9,5.6-3.9,9.1v153H275z"/>
+<rect id="screen" x="32.6" y="6.2" fill="#58595B" width="254.8" height="161.6"/>
+<g>
+	<path id="bezel" fill="#404041" d="M290.5,167.1V9.9c0-5.5-4.5-9.9-9.9-9.9H39.4c-5.4,0-9.9,4.5-9.9,9.9v157.1
+		c0,2.7,1.1,5.1,2.8,6.9h255.3C289.4,172.2,290.5,169.8,290.5,167.1z M281.2,162.8H37.3V10.1h243.9V162.8z"/>
+	<path id="isight" fill="#929497" d="M161.6,5.7c0-0.9-0.7-1.6-1.5-1.6c-0.9,0-1.6,0.7-1.6,1.6c0,0.9,0.7,1.6,1.6,1.6
+		C160.9,7.2,161.6,6.5,161.6,5.7z"/>
+	<polygon id="surface" fill="#D0D2D3" points="287.9,174 32,174 0,174 0,180.2 320,180.2 320,174 	"/>
+	<path id="base" fill="#E6E7E8" d="M0,180.2c0,0,1.9,4.7,18.5,4.7c16.6,0,140.7,0,140.7,0h1.6c0,0,124.1,0,140.7,0
+		c16.6,0,18.5-4.7,18.5-4.7"/>
+	<path id="handle" fill="#BBBDBF" d="M160.4,174h-0.7h-22.9c0,0,0.7,3.1,4.4,3.1c3.2,0,15.3,0,18.5,0c0.5,0,0.8,0,0.8,0
+		c3.3,0,15.3,0,18.5,0c3.7,0,4.4-3.1,4.4-3.1H160.4z"/>
+</g>
+</svg>
