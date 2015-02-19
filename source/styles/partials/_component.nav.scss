@@ -17,6 +17,7 @@
     > a {
       display: inline-block;
       padding: ($layout-gutter / 4) ($layout-gutter / 2);
+      line-height: $base-line-height;
     }
   }
 }

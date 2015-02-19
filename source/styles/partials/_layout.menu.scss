@@ -30,6 +30,7 @@
   display: inline-block;
   width: 50%;
   font-size: $base-font-size;
+  line-height: 90px;
 }
 
 .site-nav {
@@ -37,6 +38,7 @@
   text-transform: uppercase;
 
   a {
+    line-height: $base-line-height;
     color: $white;
     border-radius: $base-radius;
     opacity: 0.5;
