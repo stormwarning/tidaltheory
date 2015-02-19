@@ -89,3 +89,22 @@
     padding-bottom: 33.3333%;
   }
 }
+
+
+
+
+.hero--project {
+
+  &:before {
+    padding-bottom: 33.3333%;
+  }
+
+  .hero-content {
+    margin-bottom: ($base-line-height * 2);
+    text-align: left;
+
+    h1 {
+      @include typ-font-size($kilo-size, 1);
+    }
+  }
+}
