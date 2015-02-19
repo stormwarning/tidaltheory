@@ -38,6 +38,10 @@
 .project-intro,
 .project-notes {
   padding: ($base-line-height * 2) $layout-gutter;
+
+  p {
+    max-width: 640px;
+  }
 }
 
 
