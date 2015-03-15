@@ -78,10 +78,14 @@
  * Layout container, to ensure a centered, max-width.
  */
 .layout-container {
+  margin: 0 auto;
+
+  @include media-query(medium) {
+    max-width: $site-width;
+  }
 
   @include media-query(large) {
-    max-width: $site-width;
-    margin: 0 auto;
+    max-width: 1320px;
   }
 
   > :last-child {
@@ -96,6 +100,14 @@
 
   @include media-query(medium) {
     width: 33.3333%;
+  }
+}
+
+
+.layout-item--2-3 {
+
+  @include media-query(medium) {
+    width: 66.6666%;
   }
 }
 

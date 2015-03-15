@@ -17,7 +17,7 @@
     font-size: 0;
 
     @include media-query(large) {
-      padding: ($base-line-height / 4) 0;
+      padding: ($base-line-height / 4) ($layout-gutter * 2);
     }
   }
 }
