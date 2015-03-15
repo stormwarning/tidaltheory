@@ -4,11 +4,13 @@
 /**
  * Colours
  */
-$black:             #222;
-$grey-dark:         #666;
-$grey:              #bcc2c9;
-$grey-light:        #e9e9e9;
+$black:             #22272a;
+$grey-black:        #242424;
+$grey-dark:         #323639;
+$grey:              #7c7f80;
 $white:             #fff;
+
+$blue:              #00c9ff;
 
 $gold:              #978871;
 $red:               #99161e;
@@ -18,11 +20,11 @@ $blue-dark:         #17232f;
 $backdrop-light:    #e3e4e8;
 $backdrop-dark:     #dadbe0;
 
-$color-text:        $black;
-$color-background:  $white;
-$color-link:        $gold;
-$color-shadow:      $black;
-$color-selection:   $grey-light;
+$color-text:        $white;
+$color-background:  $black;
+$color-link:        $blue;
+$color-shadow:      $grey-dark;
+$color-selection:   $grey-dark;
 
 $color-email:       #00b489;
 $color-twitter:     #55aace;
@@ -37,7 +39,7 @@ $color-linkedin:    #0077b5;
  */
 // Font stacks
 $font-body:         "Source Code Pro", monospace;
-$font-heading:      "Abel", sans-serif;
+$font-heading:      "Dosis", sans-serif;
 
 // Typographic scale
 $base-font-size:    14px!default;
@@ -74,7 +76,7 @@ $layout-gutter:     20px;
 // Breakpoints
 $breakpoints: (
   "medium"          "screen and (min-width: 32em)",
-  "large"          "screen and (min-width: 62em)",
+  "large"           "screen and (min-width: 62em)",
   "retina"          "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
   "portrait"        "all and (orientation: portrait)",
   "landscape"       "all and (orientation: landscape)"

@@ -18,14 +18,11 @@
   a {
     display: inline-block;
     padding: $layout-gutter / 2;
-    color: $white;
+    color: $grey-dark;
 
     &:hover,
     &:focus {
-
-      .icon {
-        fill: $grey-light;
-      }
+      color: $blue;
     }
   }
 
@@ -33,6 +30,6 @@
     width: 32px;
     height: 32px;
     transition: all 0.15s $timing;
-    fill: $gold;
+    fill: currentColor;
   }
 }

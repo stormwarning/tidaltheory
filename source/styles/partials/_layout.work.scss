@@ -6,23 +6,9 @@
  */
 .work {
   padding: $base-line-height $layout-gutter 0;
+  background-color: $white;
 
   @include media-query(medium) {
     padding: ($base-line-height * 2) ($layout-gutter * 2);
-  }
-
-  .section-title {
-    @include typ-font-size($kilo-size, 1);
-  }
-}
-
-
-
-
-.work-container {
-
-  @include media-query(large) {
-    max-width: $site-width;
-    margin: 0 auto;
   }
 }

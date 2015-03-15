@@ -39,7 +39,7 @@
 
 
 .project-nav-overlay {
-  background-color: $grey-light;
+  background-color: $black;
 }
 
 
@@ -52,7 +52,7 @@
 
 
 .project-nav-title {
-  color: $gold;
+  color: $white;
 }
 
 
@@ -60,7 +60,7 @@
   display: inline-block;
   margin-bottom: ($base-line-height * 2);
   font-family: $font-heading;
-  border-bottom: 1px solid $grey-light;
+  border-bottom: 1px solid $grey;
 
   @include typ-font-size($h2-size, 1);
 

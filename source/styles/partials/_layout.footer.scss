@@ -5,7 +5,7 @@
  * Main site footer.
  */
 .site-footer {
-  background-color: $blue-dark;
+  background-color: $black;
 
   .layout-container {
     padding: ($base-line-height * 2) $layout-gutter;
@@ -26,5 +26,5 @@
 
 
 .footer-title {
-  color: $grey-light;
+  // color: $grey-light;
 }

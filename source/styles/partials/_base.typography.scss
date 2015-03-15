@@ -90,7 +90,8 @@ h1, .alpha {
 h2, .beta {
   @extend %hN;
 
-  font-size: $h2-size;
+  font-size: $h4-size;
+  color: $grey;
 }
 
 h3, .gamma {
