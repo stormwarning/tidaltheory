@@ -64,6 +64,10 @@
   color: $white;
   text-align: center;
 
+  > :last-child {
+    margin-bottom: 0;
+  }
+
   h1 {
     @include typ-font-size($h2-size, 1);
   }
@@ -100,7 +104,7 @@
   }
 
   .hero-content {
-    margin-bottom: ($base-line-height * 2);
+    margin-bottom: ($base-line-height * 6);
     text-align: left;
 
     h1 {
