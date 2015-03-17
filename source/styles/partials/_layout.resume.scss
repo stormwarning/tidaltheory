@@ -20,53 +20,49 @@
 
 
 .resume {
-  width: 100%;
-  padding: ($base-line-height * 2) $layout-gutter 0;
+  padding: ($base-line-height * 2) $layout-gutter;
+  color: $grey-black;
+  background-color: $white;
 
   @include media-query(medium) {
-    padding: ($base-line-height * 2) ($layout-gutter * 2) 0;
-    margin-left: -($layout-gutter * 2);
-    font-size: 0;
-  }
-
-  @include media-query(large) {
-    max-width: $site-width;
-    margin: 0 auto;
+    padding: ($base-line-height * 2) ($layout-gutter * 2);
   }
 }
 
 
 
 
-.resume-info,
+.resume-info {
+  padding: 0 $layout-gutter ($base-line-height * 2);
+}
+
+.resume-info-content {
+  position: relative;
+  padding: ($base-line-height * 2) ($layout-gutter * 2);
+  margin-top: -($base-line-height * 4);
+  color: $white;
+  background-color: $blue;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $grey-black;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+    }
+  }
+}
+
+
 .resume-experience,
 .resume-skills {
-
-  @include media-query(medium) {
-    display: inline-block;
-    width: 50%;
-    padding-left: ($layout-gutter * 2);
-    font-size: $base-font-size;
-    vertical-align: top;
-  }
 
   p {
     margin-bottom: ($base-line-height * 2);
-  }
-}
-
-.resume-info {
-
-  @include media-query(medium) {
-    width: 100%;
-  }
-}
-
-.resume-info,
-.resume-experience,
-.resume-skills {
-
-  @include media-query(large) {
-    width: 33.3333%;
   }
 }
