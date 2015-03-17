@@ -12,12 +12,44 @@
 
   > li {
     display: inline-block;
+    margin: 0;
     font-size: $base-font-size;
+
+    // overwrite custom `<ul>` bullet styles.
+    &:before {
+      content: none;
+    }
 
     > a {
       display: inline-block;
       padding: ($layout-gutter / 4) ($layout-gutter / 2);
       line-height: $base-line-height;
     }
+  }
+}
+
+
+
+
+/**
+ * List of different contact links in footer.
+ */
+.nav--contact {
+
+  a {
+    padding: $layout-gutter / 2;
+    color: $grey-dark;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    transition: all 0.15s $timing;
+    fill: currentColor;
   }
 }
