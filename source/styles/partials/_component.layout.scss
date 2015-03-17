@@ -96,6 +96,26 @@
 
 
 
+.layout-item--1-4 {
+
+  @include media-query(medium) {
+    width: 25%;
+  }
+}
+
+
+.layout-item--3-4 {
+
+  @include media-query(medium) {
+    width: 75%;
+  }
+
+  .layout {
+    margin-left: 0;
+  }
+}
+
+
 .layout-item--1-3 {
 
   @include media-query(medium) {
