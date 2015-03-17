@@ -5,7 +5,7 @@
  * Section for different project details.
  */
 .project-body {
-  padding: $base-line-height 0 0;
+  // padding: $base-line-height 0 0;
 
   .section-title {
     padding: 0 $layout-gutter;
@@ -21,14 +21,37 @@
 
 
 
+.project-intro {
+  background-color: $white;
+}
+
+
+
+
 .project-icon {
+  @extend %cf;
+
+  position: relative;
+  display: block;
   padding: 45px;
-  text-align: center;
-  background-image: linear-gradient(to bottom, $backdrop-light 0%, $backdrop-dark 66%, $backdrop-light 100%);
+  margin-top: -($base-line-height * 4);
+  background-color: $blue;
 
   img {
+    display: block;
+    float: left;
     width: 90px;
     height: 90px;
+    margin-right: ($layout-gutter * 2);
+  }
+
+  p {
+    display: block;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -49,7 +72,7 @@
 
 .project-showcase {
   padding: ($base-line-height * 2) $layout-gutter;
-  background-image: linear-gradient(to bottom, $backdrop-light 0%, $backdrop-dark 66%, $backdrop-light 100%);
+  background-image: linear-gradient(to bottom, $white 0%, $backdrop-dark 66%, $white 100%);
 }
 
 

@@ -9,7 +9,7 @@
   padding: ($base-line-height * 2) $layout-gutter;
 
   a {
-    color: $blue-dark;
+    // color: $blue-dark;
   }
 }
 
@@ -52,7 +52,9 @@
 
 
 .project-nav-title {
-  color: $white;
+  color: $grey;
+
+  @include typ-font-size($h4-size, 1);
 }
 
 
@@ -60,13 +62,15 @@
   display: inline-block;
   margin-bottom: ($base-line-height * 2);
   font-family: $font-heading;
-  border-bottom: 1px solid $grey;
+  color: $white;
+  border-bottom: 1px solid $grey-dark;
 
   @include typ-font-size($h2-size, 1);
 
   &:hover,
   &:focus,
   &:active {
-    border-bottom: 1px solid $grey-dark;
+    color: $white;
+    border-bottom: 1px solid $grey;
   }
 }
