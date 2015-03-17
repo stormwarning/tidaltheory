@@ -71,7 +71,7 @@
 
 
 .project-showcase {
-  padding: ($base-line-height * 2) $layout-gutter;
+  padding: ($base-line-height * 2) $layout-gutter ($base-line-height * 3);
   background-image: linear-gradient(to bottom, $white 0%, $backdrop-dark 66%, $white 100%);
 }
 
@@ -79,6 +79,10 @@
 
 
 .project-notes {
+
+  @include media-query(medium) {
+    padding: ($base-line-height * 4) $layout-gutter;
+  }
 
   p {
 

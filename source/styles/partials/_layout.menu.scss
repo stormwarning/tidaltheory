@@ -10,15 +10,10 @@
   left: 0;
   z-index: 100;
   width: 100%;
-  // background-color: $black;
+  padding: ($base-line-height / 4) $layout-gutter;
 
   .layout-container {
-    padding: ($base-line-height / 4) $layout-gutter;
     font-size: 0;
-
-    @include media-query(large) {
-      padding: ($base-line-height / 4) ($layout-gutter * 2);
-    }
   }
 }
 
