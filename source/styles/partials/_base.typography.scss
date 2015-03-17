@@ -235,7 +235,7 @@ dl {
  */
 ol,
 ul {
-  padding-left: $layout-gutter * 2;
+  padding-left: $layout-gutter;
   margin-top: 0;
   margin-bottom: $base-line-height;
 
@@ -246,6 +246,25 @@ ul {
 
   > :last-child {
     margin-bottom: 0;
+  }
+}
+
+
+ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    margin-left: $layout-gutter;
+
+    &:before {
+      position: absolute;
+      left: -($layout-gutter * 0.75);
+      font-weight: bold;
+      content: "*";
+    }
   }
 }
 
