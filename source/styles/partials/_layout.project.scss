@@ -5,12 +5,11 @@
  * Section for different project details.
  */
 .project-body {
-  // padding: $base-line-height 0 0;
 
   .section-title {
-    padding: 0 $layout-gutter;
-
     @include typ-font-size($kilo-size, 1);
+
+    padding: 0 $layout-gutter;
 
     @include media-query(large) {
       padding: ($base-line-height * 2) 0;
@@ -39,10 +38,15 @@
 
   img {
     display: block;
-    float: left;
     width: 90px;
     height: 90px;
-    margin-right: ($layout-gutter * 2);
+    margin: 0 auto $base-line-height;
+
+    @include media-query(medium) {
+      float: left;
+      margin-right: ($layout-gutter * 2);
+      margin-bottom: 0;
+    }
   }
 
   p {
