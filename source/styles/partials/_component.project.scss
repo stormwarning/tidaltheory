@@ -19,7 +19,7 @@
   // maintain 3:4 aspect ratio
   &:before {
     display: block;
-    padding-bottom: 133.3333%;
+    padding-bottom: 66.6666%;
     content: "";
 
     @include media-query(medium) {
@@ -120,11 +120,11 @@
   font-size: $h3-size;
 
   @include media-query(medium) {
-    font-size: $h1-size;
+    font-size: $h2-size;
   }
 
   @include media-query(large) {
-    font-size: $kilo-size;
+    font-size: $h1-size;
   }
 }
 
