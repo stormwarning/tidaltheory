@@ -13,11 +13,8 @@
     display: block;
     padding-bottom: 133.3333%;
     content: "";
-  }
 
-  @include media-query(medium) {
-
-    &:before {
+    @include media-query(medium) {
       padding-bottom: 36.2319%;
     }
   }
@@ -59,38 +56,18 @@
 .hero-content {
   position: relative;
   width: 100%;
-  padding: 0 $layout-gutter 0; // account for fixed header height
+  padding: 0 $layout-gutter;
   margin: auto;
+  margin-bottom: ($base-line-height * 6);
   color: $white;
-  text-align: center;
+  text-align: left;
 
   > :last-child {
     margin-bottom: 0;
   }
 
   h1 {
-    @include typ-font-size($h2-size, 1);
-  }
-}
-
-
-
-
-.hero--spacer {
-  margin-top: 90px;
-
-  &:before {
-    content: none;
-  }
-}
-
-
-
-
-.hero--resume {
-
-  &:before {
-    padding-bottom: 33.3333%;
+    @include typ-font-size($kilo-size, 1);
   }
 }
 
@@ -98,10 +75,6 @@
 
 
 .hero--project {
-
-  &:before {
-    padding-bottom: 33.3333%;
-  }
 
   .hero-content {
     margin-bottom: ($base-line-height * 6);
