@@ -159,12 +159,12 @@ $open-quote:  \201C !global;
 $close-quote: \201D !global;
 
 blockquote {
-  quotes: "#{$open-quote}" "#{$close-quote}";
   margin: 0;
   margin-bottom: $base-line-height;
   font-family: $font-heading;
   line-height: 1.5;
   text-indent: -0.41em;
+  quotes: "#{$open-quote}" "#{$close-quote}";
 
   > :last-child {
     margin-bottom: 0;
@@ -235,7 +235,7 @@ dl {
  */
 ol,
 ul {
-  padding-left: $layout-gutter;
+  padding-left: 1em;
   margin-top: 0;
   margin-bottom: $base-line-height;
 
@@ -257,13 +257,11 @@ ul {
 
   li {
     position: relative;
-    margin-left: $layout-gutter;
+    margin-left: 0.6rem;
 
     &:before {
-      position: absolute;
-      left: -($layout-gutter * 0.75);
       font-weight: bold;
-      content: "*";
+      content: "* ";
     }
   }
 }
