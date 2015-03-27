@@ -10,17 +10,16 @@
 
 
 .resume-subtitle {
+  @include typ-font-size($h4-size, 1);
+
   margin-bottom: ($base-line-height / 2);
   text-transform: none;
-
-  @include typ-font-size($h4-size, 1);
 }
 
 
 
 
 .resume {
-  padding: ($base-line-height * 2) $layout-gutter;
   color: $grey-black;
   background-color: $white;
 
@@ -61,6 +60,7 @@
 
 .resume-experience,
 .resume-skills {
+  padding: ($base-line-height * 2) $layout-gutter;
 
   p {
     margin-bottom: ($base-line-height * 2);

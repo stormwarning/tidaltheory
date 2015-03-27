@@ -5,7 +5,7 @@
  * Section listing different projects.
  */
 .work {
-  padding: $base-line-height $layout-gutter 0;
+  padding: $base-line-height $layout-gutter;
   background-color: $white;
 
   @include media-query(medium) {
