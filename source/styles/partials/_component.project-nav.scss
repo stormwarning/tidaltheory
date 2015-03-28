@@ -11,6 +11,13 @@
   a {
     // color: $blue-dark;
   }
+
+  &.is-visible {
+
+    .project-nav-overlay {
+      opacity: 0.75;
+    }
+  }
 }
 
 
@@ -40,6 +47,8 @@
 
 .project-nav-overlay {
   background-color: $black;
+  opacity: 1;
+  transition: opacity 0.25s $timing;
 }
 
 
