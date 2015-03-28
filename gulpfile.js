@@ -69,7 +69,6 @@ gulp.task('scripts', function () {
   return gulp.src(source.scripts)
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe(concat('scripts.js'))
     .pipe($.uglify())
     .pipe(gulp.dest(assets.scripts));
 
