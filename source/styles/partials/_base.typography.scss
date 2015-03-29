@@ -241,7 +241,11 @@ ul {
 
   > li {
 
-    > ol, ul { margin-bottom: 0; }
+    > ol,
+    > ul {
+      margin-bottom: 0;
+      margin-left: 0.6rem;
+    }
   }
 
   > :last-child {
@@ -252,12 +256,13 @@ ul {
 
 ul {
   padding-left: 0;
-  margin-left: 0;
+  margin-left: 1.2rem;
   list-style: none;
 
   li {
     position: relative;
     margin-left: 0.6rem;
+    text-indent: -1.2rem;
 
     &:before {
       font-weight: bold;
