@@ -6,7 +6,6 @@
  */
 .hero {
   position: relative;
-  display: flex;
   overflow: hidden;
 
   &:before {
@@ -54,10 +53,10 @@
 
 
 .hero-content {
-  position: relative;
+  bottom: 0;
+  left: 0;
   width: 100%;
   padding: 0 $layout-gutter;
-  margin: auto;
   margin-bottom: ($base-line-height * 6);
   color: $white;
   text-align: left;
