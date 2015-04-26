@@ -12,3 +12,14 @@
     padding: ($base-line-height * 2) ($layout-gutter * 2);
   }
 }
+
+
+
+
+.past-work {
+  padding: $base-line-height $layout-gutter;
+
+  @include media-query(medium) {
+    padding: ($base-line-height * 2) ($layout-gutter * 2);
+  }
+}

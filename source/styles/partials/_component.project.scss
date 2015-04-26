@@ -140,3 +140,56 @@
     background-color: $blue;
   }
 }
+
+
+
+
+.project--past {
+  margin-bottom: ($base-line-height * 2);
+  border-bottom: 0;
+
+  &:before {
+    padding-bottom: 66.6666%;
+  }
+
+  &:hover,
+  &:focus {
+    color: $grey-black;
+
+    .project-overlay {
+      opacity: 1;
+    }
+
+    .project-lid--a {
+      transform: translateX(25%) rotate(20deg);
+    }
+
+    .project-title {
+      transform: translateX(0);
+    }
+  }
+
+  .project-overlay {
+    opacity: 0.6;
+  }
+
+  .project-lid--a {
+    transform: translateX(-25%) rotate(20deg);
+  }
+
+  .project-title {
+    position: relative;
+    max-width: 90%;
+    font-size: $h4-size;
+    transform: translateX(-150%);
+    transition: all 0.25s $timing;
+
+    @include media-query(medium) {
+      font-size: $h3-size;
+    }
+
+    @include media-query(large) {
+      font-size: $h2-size;
+    }
+  }
+}
