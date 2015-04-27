@@ -61,25 +61,28 @@
 
 
 .project-nav-title {
-  color: $grey;
-
   @include typ-font-size($h4-size, 1);
+
+  color: $grey;
 }
 
 
 .project-next {
+  @include typ-font-size($h2-size, 1);
+
+  position: relative;
+  left: -5px;
   display: inline-block;
+  padding: 0 5px;
   margin-bottom: ($base-line-height * 2);
   font-family: $font-heading;
   color: $white;
-  border-bottom: 1px solid $grey-dark;
-
-  @include typ-font-size($h2-size, 1);
+  box-shadow: inset 0 -6px 0 $blue;
 
   &:hover,
   &:focus,
   &:active {
     color: $white;
-    border-bottom: 1px solid $grey;
+    box-shadow: inset 0 -6px 0 rgba($blue, 0.6);
   }
 }
