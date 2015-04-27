@@ -160,11 +160,13 @@
       opacity: 1;
     }
 
-    .project-lid--a {
+    .project-lid {
+      background-color: $blue;
       transform: translateX(25%) rotate(20deg);
     }
 
     .project-title {
+      color: $white;
       transform: translateX(0);
     }
   }
@@ -173,7 +175,8 @@
     opacity: 0.6;
   }
 
-  .project-lid--a {
+  .project-lid {
+    background-color: $grey-dark;
     transform: translateX(-25%) rotate(20deg);
   }
 
