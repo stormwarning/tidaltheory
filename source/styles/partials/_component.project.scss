@@ -68,7 +68,7 @@
 .project-overlay {
   background-color: $black;
   opacity: 1;
-  transition: inherit;
+  transition: all 0.25s $timing;
 }
 
 
@@ -80,7 +80,7 @@
   height: 200%;
   background-color: $white;
   transform: rotate(20deg);
-  transition: inherit;
+  transition: all 0.25s $timing;
 }
 
 
