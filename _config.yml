@@ -16,6 +16,7 @@ twitter_username: stormwarning
 github_username:  stormwarning
 
 # Build settings
+permalink: pretty
 markdown: kramdown
 
-exclude: [node_modules, source, work, bower.json, gulpfile.js, package.json]
+exclude: [node_modules, source, work/**/*, bower.json, gulpfile.js, package.json]
