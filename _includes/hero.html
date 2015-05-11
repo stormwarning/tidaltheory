@@ -1,0 +1,13 @@
+<section class="hero{% if page.hero-type %}  hero--{{ page.hero-type }}{% endif %}">
+  <div class="hero-image"{% if page.cover %} style="background-image:url(/assets/images/{{ page.cover }})"{% endif %}></div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="layout-container">
+
+      <h1 class="hero-title">{{ page.title }}</h1>
+
+    </div>
+  </div>
+</section>
