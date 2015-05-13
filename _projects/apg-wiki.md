@@ -13,5 +13,3 @@ contributions:
   - MediaWiki custom templating
 link: http://pulsepod.ca/
 ---
-
-APG Wiki

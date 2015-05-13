@@ -3,7 +3,7 @@ layout: project
 category: latest
 
 title: The Call of The Yukon
-tagline:
+tagline: There is a deep yearning in the German soul for freedom and solitude in the endless spaces of wilderness.
 cover: cover-call_of_the_yukon.jpg
 icon: work-call_of_the_yukon-icon
 showcase: work-call_of_the_yukon-showcase

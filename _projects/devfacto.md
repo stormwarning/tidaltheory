@@ -3,7 +3,7 @@ layout: project
 category: latest
 
 title: DevFacto
-tagline:
+tagline: An ideas and solutions company in Canada.
 cover: cover-devfacto.jpg
 icon: work-devfacto-icon
 showcase: work-devfacto-showcase
