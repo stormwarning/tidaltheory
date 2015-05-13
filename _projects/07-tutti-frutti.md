@@ -1,6 +1,7 @@
 ---
 layout: project
 category: latest
+permalink: /work/tutti-frutti/
 
 title: Tutti Frutti
 tagline: What’s your favourite flavour?

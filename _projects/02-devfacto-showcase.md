@@ -1,6 +1,7 @@
 ---
 layout: project
 category: past
+permalink: /work/devfacto-spotlight/
 
 title: DevFacto Spotlight
 tagline:

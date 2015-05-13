@@ -1,6 +1,7 @@
 ---
 layout: project
 category: past
+permalink: /work/cory-christopher/
 
 title: Cory Christopher
 tagline: Rooted in creativity.

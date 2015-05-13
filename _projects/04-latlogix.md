@@ -1,6 +1,7 @@
 ---
 layout: project
 category: past
+permalink: /work/latlogix/
 
 title: Latlogix
 tagline:

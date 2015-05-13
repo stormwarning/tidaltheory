@@ -1,6 +1,7 @@
 ---
 layout: project
 category: latest
+permalink: /work/devfacto/
 
 title: DevFacto
 tagline: An ideas and solutions company in Canada.

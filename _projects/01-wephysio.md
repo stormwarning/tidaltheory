@@ -1,6 +1,7 @@
 ---
 layout: project
 category: past
+permalink: /work/wephysio/
 
 title: WePhysio
 tagline: Finding and maintaining your optimal state of health in both body and mind.

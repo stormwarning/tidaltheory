@@ -1,6 +1,7 @@
 ---
 layout: project
 category: latest
+permalink: /work/qi-creative/
 
 title: Qi Creative
 tagline: Create YouR Awesome.

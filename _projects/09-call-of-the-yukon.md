@@ -1,6 +1,7 @@
 ---
 layout: project
 category: latest
+permalink: /work/call-of-the-yukon/
 
 title: The Call of The Yukon
 tagline: There is a deep yearning in the German soul for freedom and solitude in the endless spaces of wilderness.

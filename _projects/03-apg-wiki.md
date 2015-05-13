@@ -1,6 +1,7 @@
 ---
 layout: project
 category: past
+permalink: /work/pulse-online-database/
 
 title: Pulse Online Database
 tagline:

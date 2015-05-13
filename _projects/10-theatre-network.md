@@ -1,6 +1,7 @@
 ---
 layout: project
 category: latest
+permalink: /work/theatre-network/
 
 title: Theatre Network
 tagline: Live at the Roxy
