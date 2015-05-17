@@ -6,8 +6,8 @@ permalink: /work/tutti-frutti/
 title: Tutti Frutti
 tagline: What’s your favourite flavour?
 cover: cover-tutti_frutti.jpg
-icon: icon-tutti_frutti
-showcase: work-tutti_frutti-showcse
+icon: work-tutti_frutti-icon
+showcase: work-tutti_frutti-showcase
 contributions:
   - Responsive development
   - WordPress custom templating

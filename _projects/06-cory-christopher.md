@@ -6,8 +6,8 @@ permalink: /work/cory-christopher/
 title: Cory Christopher
 tagline: Rooted in creativity.
 cover: cover-cory_christopher.jpg
-icon: icon-cory_christopher
-showcase: work-cory_christopher-showcse
+icon: work-cory_christopher-icon
+showcase: work-cory_christopher-showcase
 contributions:
   - Responsive development
   - WordPress custom templating

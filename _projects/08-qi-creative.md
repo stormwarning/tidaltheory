@@ -6,8 +6,8 @@ permalink: /work/qi-creative/
 title: Qi Creative
 tagline: Create YouR Awesome.
 cover: cover-qi_creative.jpg
-icon: icon-qi_creative
-showcase: work-qi_creative-showcse
+icon: work-qi_creative-icon
+showcase: work-qi_creative-showcase
 contributions:
   - Responsive development
   - WordPress custom templating
