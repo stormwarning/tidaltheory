@@ -67,8 +67,30 @@
 
 </article>
 
+{% assign i = site.projects | size %}
+{% for p in site.projects reversed %}
+
+  {% if p.url == page.url %}
+
+    {% assign pageid = i %}
+    {% break %}
+
+  {% endif %}
+
+  {% capture i %}{{ i | minus: 1 }}{% endcapture %}
+
+{% endfor %}
+
+{% assign size = site.projects | size %}
+{% if pageid == size %}
+
+  {% assign pageid = 0 %}
+
+{% endif %}
+
 <nav class="project-nav">
-  <div class="project-nav-image" style="background-image:url(/assets/images/cover-wephysio.jpg)"></div>
+{% for next in site.projects offset:pageid limit:1 %}
+  <div class="project-nav-image" style="background-image:url(/assets/images/{{ next.cover }})"></div>
 
   <div class="project-nav-overlay"></div>
 
@@ -81,7 +103,7 @@
         </div>
 
         <div class="layout-item layout-item--2-3">
-          <a class="project-next js-parent-hover" href="/work/wephysio/">WePhysio</a>
+          <a class="project-next js-parent-hover" href="{{ next.url }}">{{ next.title }}</a>
 
           <p><a href="/work/">See all work</a></p>
         </div>
@@ -89,6 +111,7 @@
 
     </div>
   </div>
+{% endfor %}
 </nav>
 
 {% include footer.html %}
