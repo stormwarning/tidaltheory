@@ -1,251 +1,38 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tidal Theory — Jeff Nelson, Edmonton-based web designer/front-end developer</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
 
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <!-- Place favicon.ico in the root directory -->
+<section class="work">
+  <div class="layout-container">
 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis|Source+Code+Pro">
-  <link rel="stylesheet" href="/assets/styles/main.css">
+    <div class="layout layout--flush">
 
-  <script src="/assets/scripts/modernizr.js"></script>
-</head>
-<body>
-  <!--[if lt IE 8]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-  <header class="site-menu" id="top">
-    <div class="layout-container">
-
-      <a class="site-home" href="/">
-        <img class="logo" src="#">
-      </a>
-
-      <nav class="site-nav">
-        <ul class="nav">
-          <li>
-            <a href="/work/">Work</a>
-          </li>
-          <li>
-            <a href="/resume/">Resum&eacute;</a>
-          </li>
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-
-  <main class="main" id="main">
-
-    <section class="hero">
-      <div class="hero-image"></div>
-
-      <div class="hero-overlay"></div>
-
-      <div class="hero-content">
-        <div class="layout-container">
-          <h1>Jeff Nelson</h1>
-
-          <p>makes things for the web.</p>
-        </div>
+      <div class="layout-item layout-item--1-3">
+        <h2 class="section-title">Selected work&#8212;</h2>
       </div>
-    </section>
 
+      <div class="layout-item layout-item--2-3">
+      {% assign latestwork = site.projects | where:'category','latest' %}
+      {% for project in latestwork reversed %}
+        <a class="project{% if forloop.first == true %}  project--featured{% endif %}" href="{{ project.url }}">
+          <div class="project-image" style="background-image:url(/assets/images/{{ project.cover }})"></div>
 
-    <section class="work">
-      <div class="layout-container">
+          <div class="project-overlay"></div>
 
-        <div class="layout layout--flush">
+          <div class="project-lid project-lid--a"></div>
+          <div class="project-lid project-lid--b"></div>
 
-          <div class="layout-item layout-item--1-3">
-            <h2 class="section-title">Selected work&#8212;</h2>
+          <div class="project-content">
+            <div>
+              <h3 class="project-title">{{ project.title }}</h3>
+              <p class="project-tagline">{{ project.tagline }}</p>
+            </div>
           </div>
-
-          <div class="layout-item layout-item--2-3">
-            <a class="project project--featured" href="/work/theatre-network/">
-              <div class="project-image" style="background-image:url(/assets/images/cover-theatre_network.jpg)"></div>
-
-              <div class="project-overlay"></div>
-
-              <div class="project-lid project-lid--a"></div>
-              <div class="project-lid project-lid--b"></div>
-
-              <div class="project-content">
-                <div>
-                  <h3 class="project-title">Theatre Network</h3>
-                  <p class="project-tagline">Live at the Roxy</p>
-                </div>
-              </div>
-            </a>
-
-            <a class="project" href="/work/call-of-the-yukon/">
-              <div class="project-image" style="background-image:url(/assets/images/cover-call_of_the_yukon.jpg)"></div>
-
-              <div class="project-overlay"></div>
-
-              <div class="project-lid project-lid--a"></div>
-              <div class="project-lid project-lid--b"></div>
-
-              <div class="project-content">
-                <div>
-                  <h3 class="project-title">Call of The Yukon</h3>
-                  <p class="project-tagline">There is a deep yearning in the German soul for freedom and solitude in the endless spaces of wilderness.</p>
-                </div>
-              </div>
-            </a>
-
-            <a class="project" href="/work/tutti-frutti/">
-              <div class="project-image" style="background-image:url(/assets/images/cover-tutti_frutti.jpg)"></div>
-
-              <div class="project-overlay"></div>
-
-              <div class="project-lid project-lid--a"></div>
-              <div class="project-lid project-lid--b"></div>
-
-              <div class="project-content">
-                <div>
-                  <h3 class="project-title">Tutti Frutti</h3>
-                  <p class="project-tagline">What's your favourite flavour?</p>
-                </div>
-              </div>
-            </a>
-
-            <a class="project" href="/work/qi-creative/">
-              <div class="project-image" style="background-image:url(/assets/images/cover-qi_creative.jpg)"></div>
-
-              <div class="project-overlay"></div>
-
-              <div class="project-lid project-lid--a"></div>
-              <div class="project-lid project-lid--b"></div>
-
-              <div class="project-content">
-                <div>
-                  <h3 class="project-title">Qi Creative</h3>
-                  <p class="project-tagline">Create YouR Awesome.</p>
-                </div>
-              </div>
-            </a>
-
-            <a class="project" href="/work/cory-christopher/">
-              <div class="project-image" style="background-image:url(/assets/images/cover-cory_christopher.jpg)"></div>
-
-              <div class="project-overlay"></div>
-
-              <div class="project-lid project-lid--a"></div>
-              <div class="project-lid project-lid--b"></div>
-
-              <div class="project-content">
-                <div>
-                  <h3 class="project-title">Cory Christopher</h3>
-                  <p class="project-tagline">Rooted in creativity.</p>
-                </div>
-              </div>
-            </a>
-
-            <a class="project" href="/work/devfacto/">
-              <div class="project-image" style="background-image:url(/assets/images/cover-devfacto.jpg)"></div>
-
-              <div class="project-overlay"></div>
-
-              <div class="project-lid project-lid--a"></div>
-              <div class="project-lid project-lid--b"></div>
-
-              <div class="project-content">
-                <div>
-                  <h3 class="project-title">DevFacto</h3>
-                  <p class="project-tagline">An ideas and solutions company in Canada.</p>
-                </div>
-              </div>
-            </a>
-
-            <a class="project" href="/work/wephysio/">
-              <div class="project-image" style="background-image:url(/assets/images/cover-wephysio.jpg)"></div>
-
-              <div class="project-overlay"></div>
-
-              <div class="project-lid project-lid--a"></div>
-              <div class="project-lid project-lid--b"></div>
-
-              <div class="project-content">
-                <div>
-                  <h3 class="project-title">WePhysio</h3>
-                  <p class="project-tagline">Finding and maintaining your optimal state of health in both body and mind.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <footer class="site-footer">
-    <div class="layout-container">
-
-      <div class="layout layout--flush">
-
-        <div class="layout-item layout-item--1-3">
-          <h2 class="footer-title">Say hello&#8212;</h2>
-        </div>
-
-        <div class="layout-item layout-item--2-3">
-          <ul class="nav nav--contact">
-            <li>
-              <a href="mailto:jeff@stormwarning.ca">
-                <svg class="icon icon--email"><use xlink:href="/assets/images/sprite.symbol.svg#icon-email"></use></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/stormwarning">
-                <svg class="icon icon--twitter"><use xlink:href="/assets/images/sprite.symbol.svg#icon-twitter"></use></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/stormwarning">
-                <svg class="icon icon--github"><use xlink:href="/assets/images/sprite.symbol.svg#icon-github"></use></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/stormwarning">
-                <svg class="icon icon--behance"><use xlink:href="/assets/images/sprite.symbol.svg#icon-behance"></use></svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://ca.linkedin.com/in/stormwarning/">
-                <svg class="icon icon--linkedin"><use xlink:href="/assets/images/sprite.symbol.svg#icon-linkedin"></use></svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
+        </a>
+      {% endfor %}
       </div>
 
     </div>
-  </footer>
 
-
-
-
-  <script src="/assets/scripts/main.js"></script>
-
-  <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-58836125-1','auto');ga('send','pageview');
-  </script>
-</body>
-</html>
+  </div>
+</section>
