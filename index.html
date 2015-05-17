@@ -12,8 +12,10 @@ layout: default
       </div>
 
       <div class="layout-item layout-item--2-3">
-        <a class="project project--featured" href="/work/theatre-network/">
-          <div class="project-image" style="background-image:url(/assets/images/cover-theatre_network.jpg)"></div>
+      {% assign latestwork = site.projects | where:'category','latest' %}
+      {% for project in latestwork reversed %}
+        <a class="project{% if forloop.first == true %}  project--featured{% endif %}" href="{{ project.url }}">
+          <div class="project-image" style="background-image:url(/assets/images/{{ project.cover }})"></div>
 
           <div class="project-overlay"></div>
 
@@ -22,107 +24,12 @@ layout: default
 
           <div class="project-content">
             <div>
-              <h3 class="project-title">Theatre Network</h3>
-              <p class="project-tagline">Live at the Roxy</p>
+              <h3 class="project-title">{{ project.title }}</h3>
+              <p class="project-tagline">{{ project.tagline }}</p>
             </div>
           </div>
         </a>
-
-        <a class="project" href="/work/call-of-the-yukon/">
-          <div class="project-image" style="background-image:url(/assets/images/cover-call_of_the_yukon.jpg)"></div>
-
-          <div class="project-overlay"></div>
-
-          <div class="project-lid project-lid--a"></div>
-          <div class="project-lid project-lid--b"></div>
-
-          <div class="project-content">
-            <div>
-              <h3 class="project-title">Call of The Yukon</h3>
-              <p class="project-tagline">There is a deep yearning in the German soul for freedom and solitude in the endless spaces of wilderness.</p>
-            </div>
-          </div>
-        </a>
-
-        <a class="project" href="/work/tutti-frutti/">
-          <div class="project-image" style="background-image:url(/assets/images/cover-tutti_frutti.jpg)"></div>
-
-          <div class="project-overlay"></div>
-
-          <div class="project-lid project-lid--a"></div>
-          <div class="project-lid project-lid--b"></div>
-
-          <div class="project-content">
-            <div>
-              <h3 class="project-title">Tutti Frutti</h3>
-              <p class="project-tagline">What's your favourite flavour?</p>
-            </div>
-          </div>
-        </a>
-
-        <a class="project" href="/work/qi-creative/">
-          <div class="project-image" style="background-image:url(/assets/images/cover-qi_creative.jpg)"></div>
-
-          <div class="project-overlay"></div>
-
-          <div class="project-lid project-lid--a"></div>
-          <div class="project-lid project-lid--b"></div>
-
-          <div class="project-content">
-            <div>
-              <h3 class="project-title">Qi Creative</h3>
-              <p class="project-tagline">Create YouR Awesome.</p>
-            </div>
-          </div>
-        </a>
-
-        <a class="project" href="/work/cory-christopher/">
-          <div class="project-image" style="background-image:url(/assets/images/cover-cory_christopher.jpg)"></div>
-
-          <div class="project-overlay"></div>
-
-          <div class="project-lid project-lid--a"></div>
-          <div class="project-lid project-lid--b"></div>
-
-          <div class="project-content">
-            <div>
-              <h3 class="project-title">Cory Christopher</h3>
-              <p class="project-tagline">Rooted in creativity.</p>
-            </div>
-          </div>
-        </a>
-
-        <a class="project" href="/work/devfacto/">
-          <div class="project-image" style="background-image:url(/assets/images/cover-devfacto.jpg)"></div>
-
-          <div class="project-overlay"></div>
-
-          <div class="project-lid project-lid--a"></div>
-          <div class="project-lid project-lid--b"></div>
-
-          <div class="project-content">
-            <div>
-              <h3 class="project-title">DevFacto</h3>
-              <p class="project-tagline">An ideas and solutions company in Canada.</p>
-            </div>
-          </div>
-        </a>
-
-        <a class="project" href="/work/wephysio/">
-          <div class="project-image" style="background-image:url(/assets/images/cover-wephysio.jpg)"></div>
-
-          <div class="project-overlay"></div>
-
-          <div class="project-lid project-lid--a"></div>
-          <div class="project-lid project-lid--b"></div>
-
-          <div class="project-content">
-            <div>
-              <h3 class="project-title">WePhysio</h3>
-              <p class="project-tagline">Finding and maintaining your optimal state of health in both body and mind.</p>
-            </div>
-          </div>
-        </a>
+      {% endfor %}
       </div>
 
     </div>
