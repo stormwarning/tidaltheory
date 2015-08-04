@@ -35,5 +35,8 @@
     "run-sequence": "^1.0.1",
     "vinyl": "^0.4.6"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "enfield": "^0.4.0"
+  }
 }
