@@ -7,7 +7,7 @@ title: The Great Human Odyssey
 tagline: "Homo Sapiens: Child of the Ice Age"
 cover: cover-human.jpg
 icon: work-human-icon
-showcase: work-human-showcase
+# showcase: work-human-showcase
 contributions:
   - Responsive development
   - UI/interaction design
