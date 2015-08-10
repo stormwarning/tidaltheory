@@ -12,7 +12,7 @@ layout: default
       </div>
 
       <div class="layout-item layout-item--2-3">
-      {% assign latestwork = site.projects | where:'category','latest' %}
+      {% assign latestwork = site.work | where:'category','latest' %}
       {% for project in latestwork reversed %}
         <a class="project{% if forloop.first == true %}  project--featured{% endif %}" href="{{ project.url }}">
           <div class="project-image" style="background-image:url(/assets/images/{{ project.cover }})"></div>
