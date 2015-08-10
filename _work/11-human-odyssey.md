@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: work
 category: latest
 permalink: /work/human/
 
