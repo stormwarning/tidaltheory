@@ -16,7 +16,7 @@
     font-size: $base-font-size;
     text-indent: 0;
 
-    // overwrite custom `<ul>` bullet styles.
+    // Overwrite custom `<ul>` bullet styles.
     &:before {
       content: none;
     }
