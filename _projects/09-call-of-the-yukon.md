@@ -1,6 +1,6 @@
 ---
 layout: project
-category: latest
+category: past
 permalink: /work/call-of-the-yukon/
 
 title: The Call of The Yukon
