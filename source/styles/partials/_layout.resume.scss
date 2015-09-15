@@ -63,11 +63,13 @@
 
   a {
     color: $grey-black;
+    box-shadow: inset 0 -1px 0 rgba(mix($grey-black, $black, 50%), 0.1);
 
     &:hover,
     &:focus,
     &:active {
-
+      color: mix($grey-black, $white, 90%);
+      box-shadow: inset 0 -1px 0 rgba(mix($grey-black, $white, 90%), 1);
     }
   }
 }
