@@ -136,6 +136,10 @@
   color: $white;
   border-bottom: 0;
 
+  @include media-query(landscape) {
+    margin-top: 0;
+  }
+
   .project-lid {
     background-color: $blue;
   }

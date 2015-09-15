@@ -7,6 +7,11 @@
 .site-footer {
   padding: ($base-line-height * 2) $layout-gutter;
   background-color: $black;
+
+  @include media-query(landscape) {
+    width: 50%;
+    margin-left: 50%;
+  }
 }
 
 

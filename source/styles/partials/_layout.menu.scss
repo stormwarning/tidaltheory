@@ -12,6 +12,11 @@
   width: 100%;
   padding: ($base-line-height / 4) $layout-gutter;
 
+  @include media-query(landscape) {
+    position: fixed;
+    width: 50%;
+  }
+
   .layout-container {
     font-size: 0;
   }
@@ -23,12 +28,20 @@
 .site-home,
 .site-nav {
   display: inline-block;
-  width: 50%;
   font-size: $base-font-size;
   line-height: 90px;
+
+  @include media-query(medium) {
+    width: 50%;
+  }
+}
+
+.site-home {
+  width: 25%;
 }
 
 .site-nav {
+  width: 75%;
   text-align: right;
   text-transform: uppercase;
 

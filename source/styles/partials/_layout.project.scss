@@ -6,6 +6,11 @@
  */
 .project-body {
 
+  @include media-query(landscape) {
+    width: 50%;
+    margin-left: 50%;
+  }
+
   .section-title {
     @include typ-font-size($kilo-size, 1);
 
@@ -35,6 +40,11 @@
   padding: 45px;
   margin-top: -($base-line-height * 4);
   background-color: $blue;
+
+  @include media-query(landscape) {
+    margin-top: 100px;
+    margin-left: -20px;
+  }
 
   img {
     display: block;
@@ -66,6 +76,10 @@
 .project-notes {
   padding: ($base-line-height * 2) $layout-gutter;
 
+  @include media-query(landscape) {
+    padding: 0;
+  }
+
   p {
     max-width: 640px;
   }
@@ -92,6 +106,13 @@
 
     &:last-child {
       padding-top: $base-line-height;
+    }
+  }
+
+  .layout-item--2-3 {
+
+    @include media-query(landscape) {
+      padding-left: $layout-gutter;
     }
   }
 }

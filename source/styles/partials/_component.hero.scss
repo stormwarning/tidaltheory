@@ -8,6 +8,12 @@
   position: relative;
   overflow: hidden;
 
+  @include media-query(landscape) {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+  }
+
   &:before {
     display: block;
     padding-bottom: 133.3333%;

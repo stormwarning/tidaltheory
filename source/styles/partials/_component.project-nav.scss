@@ -8,6 +8,11 @@
   position: relative;
   padding: ($base-line-height * 2) $layout-gutter;
 
+  @include media-query(landscape) {
+    width: 50%;
+    margin-left: 50%;
+  }
+
   a {
     // color: $blue-dark;
   }
@@ -57,6 +62,13 @@
 .project-nav-content {
   position: relative;
   z-index: 1;
+
+  .layout-item--2-3 {
+
+    @include media-query(landscape) {
+      padding-left: $layout-gutter;
+    }
+  }
 }
 
 

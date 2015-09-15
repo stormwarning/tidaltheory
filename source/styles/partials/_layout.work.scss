@@ -11,6 +11,19 @@
   @include media-query(medium) {
     padding: ($base-line-height * 2) ($layout-gutter * 2);
   }
+
+  @include media-query(landscape) {
+    width: 50%;
+    padding: 100px 0 0;
+    margin-left: 50%;
+  }
+
+  .layout-item--1-3 {
+
+    @include media-query(landscape) {
+      padding-left: ($layout-gutter * 2);
+    }
+  }
 }
 
 
@@ -21,5 +34,18 @@
 
   @include media-query(medium) {
     padding: ($base-line-height * 2) ($layout-gutter * 2);
+  }
+
+  @include media-query(landscape) {
+    width: 50%;
+    padding: 100px $layout-gutter 0;
+    margin-left: 50%;
+  }
+
+  .layout-item--2-3 {
+
+    @include media-query(landscape) {
+      padding: 0 $layout-gutter;
+    }
   }
 }
