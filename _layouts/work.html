@@ -69,8 +69,8 @@
 
 </article>
 
-{% assign i = site.projects | size %}
-{% for p in site.projects reversed %}
+{% assign i = site.work | size %}
+{% for p in site.work reversed %}
 
   {% if p.url == page.url %}
 
@@ -83,7 +83,7 @@
 
 {% endfor %}
 
-{% assign size = site.projects | size %}
+{% assign size = site.work | size %}
 {% if pageid == size %}
 
   {% assign pageid = 0 %}
@@ -91,7 +91,7 @@
 {% endif %}
 
 <nav class="project-nav">
-{% for next in site.projects offset:pageid limit:1 %}
+{% for next in site.work offset:pageid limit:1 %}
   <div class="project-nav-image" style="background-image:url(/assets/images/{{ next.cover }})"></div>
 
   <div class="project-nav-overlay"></div>
