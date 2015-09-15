@@ -26,6 +26,12 @@
   @include media-query(medium) {
     padding: ($base-line-height * 2) ($layout-gutter * 2);
   }
+
+  @include media-query(landscape) {
+    width: 50%;
+    padding: 100px 0 0;
+    margin-left: 50%;
+  }
 }
 
 
@@ -33,6 +39,10 @@
 
 .resume-info {
   padding: 0 $layout-gutter ($base-line-height * 2);
+
+  @include media-query(landscape) {
+    padding: 0 0 ($layout-gutter * 2);
+  }
 }
 
 .resume-info-content {
@@ -42,17 +52,24 @@
   color: $white;
   background-color: $blue;
 
+  @include media-query(landscape) {
+    margin-top: 0;
+    margin-left: -$layout-gutter;
+  }
+
   > :last-child {
     margin-bottom: 0;
   }
 
   a {
     color: $grey-black;
+    box-shadow: inset 0 -1px 0 rgba(mix($grey-black, $black, 50%), 0.1);
 
     &:hover,
     &:focus,
     &:active {
-
+      color: mix($grey-black, $white, 90%);
+      box-shadow: inset 0 -1px 0 rgba(mix($grey-black, $white, 90%), 1);
     }
   }
 }
@@ -61,6 +78,10 @@
 .resume-experience,
 .resume-skills {
   padding: ($base-line-height * 2) $layout-gutter;
+
+  @include media-query(landscape) {
+    padding: ($layout-gutter * 2);
+  }
 
   p {
     margin-bottom: ($base-line-height * 2);

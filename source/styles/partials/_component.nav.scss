@@ -40,10 +40,11 @@
   a {
     padding: $layout-gutter / 2;
     color: $grey-dark;
+    box-shadow: none;
 
     &:hover,
     &:focus {
-      color: $blue;
+      color: $color-link;
     }
   }
 

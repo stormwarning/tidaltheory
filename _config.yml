@@ -8,9 +8,12 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://tidaltheory.co" # the base hostname & protocol for your site
 
 collections:
-  projects:
+  work:
     output: true
     permalink: /work/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 twitter_username: stormwarning
 github_username:  stormwarning

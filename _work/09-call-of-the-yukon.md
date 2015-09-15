@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: work
 category: past
 permalink: /work/call-of-the-yukon/
 

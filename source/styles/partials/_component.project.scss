@@ -13,7 +13,7 @@
   margin-bottom: 0;
   overflow: hidden;
   color: $grey-black;
-  border-bottom: 2px solid $grey;
+  border-bottom: 2px solid $backdrop-dark;
   transition: all 0.25s $timing;
 
   // maintain 3:4 aspect ratio
@@ -135,6 +135,10 @@
   margin-top: -($base-line-height * 4);
   color: $white;
   border-bottom: 0;
+
+  @include media-query(landscape) {
+    margin-top: 0;
+  }
 
   .project-lid {
     background-color: $blue;

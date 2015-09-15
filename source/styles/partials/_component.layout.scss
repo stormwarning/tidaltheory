@@ -77,6 +77,27 @@
   > %layout-item {
     padding-left: 0;
   }
+
+  .layout-item--1-3 {
+
+    @include media-query(landscape) {
+      padding-left: $layout-gutter;
+    }
+  }
+
+  .layout-item--2-3 {
+
+    @include media-query(landscape) {
+      width: 100%;
+    }
+  }
+
+  .layout-item--3-4 {
+
+    @include media-query(landscape) {
+      width: 100%;
+    }
+  }
 }
 
 
@@ -120,6 +141,10 @@
 
   .layout {
     margin-left: 0;
+
+    @include media-query(landscape) {
+      margin-left: -($layout-gutter * 2);
+    }
   }
 }
 
